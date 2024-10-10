@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2C6E1"
+    android:orientation="vertical"
+    tools:context=".ManageBudget">
+
+    <TextView
+        android:id="@+id/txtmngbdgt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="@string/manage_budget"
+        android:textAlignment="center"
+        android:textColor="#166AAC"
+        android:textSize="40sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edttxtcat1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/category"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edttxtbdgcat1"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/percentage"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edttxtcat2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/category"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edttxtbdgcat2"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/percentage"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edttxtcat3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/category"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edttxtbdgcat3"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/percentage"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edttxtcat4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/category"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edttxtbdgcat4"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/percentage"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edttxtcat5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/category"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edttxtbdgcat5"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/percentage"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnexpsave"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="20dp"
+            android:text="@string/save" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="#0061FF"
+        android:text="@string/back" />
+
+</LinearLayout>

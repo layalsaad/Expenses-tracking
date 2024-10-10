@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgound"
+    android:orientation="vertical"
+    tools:context=".WelcomePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnmanageexpenses"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="750dp"
+            android:background="#0061FF"
+            android:textSize="20dp"
+            android:text="@string/manage_expenses" />
+    </LinearLayout>
+
+</LinearLayout>

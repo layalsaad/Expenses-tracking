@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2C6E1"
+    android:orientation="vertical"
+    tools:context=".ManageCategories">
+
+    <TextView
+        android:id="@+id/txtcategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="@string/categories"
+        android:textAlignment="center"
+        android:textColor="#166AAC"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtdefaultcategories"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/default_categories"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtcatdebt"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#6CB6F1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/catdebt"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtcatproducts"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#689BC3"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/catproducts"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtcatmarketing"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#689BC3"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/catmarketing"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtcatfees"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#6CB6F1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/catfees"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnercats"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtcatname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/category_name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edttxtcatname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnaddcat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/addcat" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="#0061FF"
+        android:text="@string/back" />
+</LinearLayout>

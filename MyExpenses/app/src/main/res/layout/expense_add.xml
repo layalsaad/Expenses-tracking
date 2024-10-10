@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2C6E1"
+    android:orientation="vertical"
+    tools:context=".AddExpense">
+
+    <TextView
+        android:id="@+id/txtaddexpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="@string/add_expense"
+        android:textAlignment="center"
+        android:textColor="#166AAC"
+        android:textSize="24sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtexpname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/expense_name"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edttxtname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="8dp"
+            android:ems="10"
+            android:hint="@string/hint_name"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/txtexpdescription"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/expense_description"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edttxtdescription"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="8dp"
+            android:ems="10"
+            android:hint="@string/hint_description"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/txtexpamount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/amount"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edttxtamount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="8dp"
+            android:ems="10"
+            android:hint="@string/hint_amount"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/txtexpcat"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/category"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnercategories"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="8dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnexpsave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="@string/save" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="#275A83"
+        android:text="@string/back" />
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2C6E1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtquote"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="20dp"
+        android:text="@string/quote"
+        android:textAlignment="center"
+        android:textColor="#203443"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginVertical="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnexplist"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="15dp"
+            android:background="#0061FF"
+            android:text="@string/list_of_expenses"
+            android:textColorLink="#232323" />
+
+        <Button
+            android:id="@+id/btnaddexp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="15dp"
+            android:background="#0061FF"
+            android:text="@string/add_expense"
+            android:textColorLink="@color/black" />
+
+        <Button
+            android:id="@+id/btncat"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="15dp"
+            android:background="#0061FF"
+            android:text="@string/categories"
+            android:textColorLink="@color/black" />
+
+        <Button
+            android:id="@+id/btnbdgmanagement"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="15dp"
+            android:background="#0061FF"
+            android:text="@string/budget_management"
+            android:textColorLink="@color/black" />
+
+        <Button
+            android:id="@+id/btninsights"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="15dp"
+            android:background="#0061FF"
+            android:text="@string/insights"
+            android:textColorLink="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="20dp"
+        android:background="#0061FF"
+        android:text="@string/log_out"
+        android:textColorLink="@color/black" />
+</LinearLayout>
